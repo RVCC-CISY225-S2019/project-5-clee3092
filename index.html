@@ -40,7 +40,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="img">
+		<section class="pictures">
 			<div class="content">
 				<figure>
 					<picture>
@@ -79,7 +79,7 @@
 				</figure>
            </div>
         </section>
-        <article>
+        <article class="story">
             <h1>Dr. Jekyll and Mr. Hyde</h1>
             <p>There was no mirror, at that date, in my room; that which stands beside me as I write, was brought there later on and for the very purpose of these transformations. The night however, was far gone into the morning--the morning, black as it was, was nearly ripe for the conception of the day--the inmates of my house were locked in the most rigorous hours of slumber; and I determined, flushed as I was with hope and triumph, to venture in my new shape as far as to my bedroom. I crossed the yard, wherein the constellations looked down upon me, I could have thought, with wonder, the first creature of that sort that their unsleeping vigilance had yet disclosed to them; I stole through the corridors, a stranger in my own house; and coming to my room, I saw for the first time the appearance of Edward Hyde.</p>
 
@@ -97,15 +97,24 @@
           <hr>
             <section class="form-container">
                 <h1>Contact me</h1>
-                    <form method="contact" action="https://formspree.io/YOUREMAILHERE">
+                <fieldset>
+                    <legend>Get in touch!</legend>
+                    <form method="POST" action="https://formspree.io/clee3092@yahoo.com">
                         <h3>Email</h3>
                     <input type="email" name="email">
+                    <br>
+                    <fieldset>
+                        <legend>I would like a reply</legend>
+                        <p> <input type="radio" name="size" id="size_1" value="small"> <label for="size_1">Yes</label> </p>
+                        <p> <input type="radio" name="size" id="size_2" value="medium"> <label for="size_2">No</label> </p>
+                        </fieldset>
                         <br>
                         <h3>Message</h3>
-                    <textarea name="message"></textarea>
+                        <textarea name="message"></textarea>
                         <br>
-                    <button type="submit">Submit</button>
-                </form>
+                        <button type="submit">Submit</button>
+                    </form>
+                </fieldset>
             </section>
         <hr>
        <footer class = "footer">
